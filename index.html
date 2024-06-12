@@ -3,347 +3,164 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Landing UADE - Hace feliz a un gato</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header class="header">
-        <nav class="navbar navbar-expand-lg">
+        <nav class="navbar navbar-expand-lg container">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#"><img src="img/images.png" alt="logo"></a>
+                <a class="navbar-brand" href="#intro"><img src="img/images.png" alt="logo"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav nav-menu">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#servicios">Servicios</a>
+                            <a class="nav-link" href="#data">Datos del equipo</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#about">Sobre nosotros</a>
+                            <a class="nav-link" aria-current="page" href="#avances">Avances</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Alumnos</a>
+                            <a class="nav-link" href="#figma">Figma</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Eventos</a>
+                            <a class="nav-link" href="#video">Video</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://uade-trabajodiseno.github.io/entrega-hacefelizaungato/" target="_blank">Proyecto</a>
                         </li>
                     </ul>
-                    <a href="#contacto"><button class="btn" type="submit">Contacto</button></a>
                 </div>
             </div>
         </nav>
-
-        <section class="home">
-            <div class="clearfix">
-                <img src="img/red_box.svg" class="col-md-6 float-md-end mb-3 ms-md-3" alt="red box">
-                <div class="home-text">
-                    <h1 class="titulo">Hacé feliz a un gato</h1>
-                    <p class="home-p">
-                        Lorem ipsum Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum
-                    </p>
-                    <div class="home-buttons">
-                        <a href="#contacto" class="button-home">Contacto</a>
-                        <a href="#about" class="button-ab">Sobre nosotros</a>
-                    </div>
-                </div>
-            </div>
-        </section>
     </header>
-
-
-
-
-
-    <main>
-        <!-- About -->
-        <section class="about-banner" id="about">
-            <div class="container banner-container">
+    <main class="container">
+        <section id="intro">
+            <div class="row">
+                <div class="col-md-6 intro-txt">
+                    <h1>Proyecto - Hacé feliz a un gato</h1>
+                    <p>Nuestro proyecto está centrado en abordar el servicio que da la ONG llamada "Hacé feliz a un Gato", una organización centrada en rescatar gatos de la calle y buscarles un nuevo hogar en una familia que les dé el amor que merecen.</p>
+                    <div class="intro-btn-cont d-flex">
+                        <a href="#data" class="redBtn">Más información</a>
+                        <a href="#data" class="redBtn">Visitar proyecto</a>
+                    </div>
+                </div>
+                <div class="col-md-6 img-cont">
+                    <img src="img/about-img.svg" alt="Gato">
+                </div>
+            </div>
+        </section>
+        <section id="data">
+            <div class="data-card">
                 <div class="row">
-                    <div class="col-md-6 d-flex align-items-left justify-content-start">
-                        <h2 class="banner-titulo">Sobre nosotros</h2>
-                    </div>
-                    <div class="col-md-6 d-flex align-items-right justify-content-end">
-                        <div class="banner-img">
-                            <img class="estrella1" src="img/icons8-estrella.svg" alt="estrella">
-                            <img class="pata" src="img/icons8-pata.svg" alt="pata">
-                            <img class="estrella2" src="img/icons8-estrella.svg" alt="estrella">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="about">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <img class="about-foto" src="img/Captura de pantalla 2024-05-19 a la(s) 15.12.19.png" alt="about foto">
+                    <div class="col-md-6 integrantes">
+                        <h2>Integrantes del <span>equipo</span></h2>
+                        <div class="integrantes-cont">
+                            <div class="integrante-card">
+                                <img src="img/juan.jpeg" alt="">
+                                <div class="integ-card-cont">
+                                    <h3>Juan Zolezzi</h3>
+                                    <h5>Rol: Diseñador</h5>
+                                    <a href="https://juancruzzolezzi.github.io/FichaPersonal1/" class="redBtn" target="_blank">Ficha personal</a>
+                                </div>
+                            </div>
+                            <div class="integrante-card">
+                                <img src="img/santiago.png" alt="">
+                                <div class="integ-card-cont">
+                                    <h3>Santiago Guardo</h3>
+                                    <h5>Rol: Maquetador</h5>
+                                    <a href="https://guardo2.github.io/uade_fichaweb/" class="redBtn" target="_blank">Ficha personal</a>
+                                </div>
+                            </div>
+                            <div class="integrante-card">
+                                <img src="img/ivan.jpeg" alt="">
+                                <div class="integ-card-cont">
+                                    <h3>Iván Rosales</h3>
+                                    <h5>Rol: Programador</h5>
+                                    <a href="https://ivanezek.github.io/ficha-personal/" class="redBtn" target="_blank">Ficha personal</a>
+                                </div>
+                            </div>
+                            <div class="integrante-card">
+                                <img src="img/maximo.jpeg" alt="">
+                                <div class="integ-card-cont">
+                                    <h3>Máximo Luciani</h3>
+                                    <h5>Rol: Comunicador Web</h5>
+                                    <a href="https://maluciani77.github.io/Parcial1/" class="redBtn" target="_blank">Ficha personal</a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="about-text">
-                                    <h3>
-                                        Animate a darle hogar a un gatito
-                                    </h3>
-                                    <p>Lo sacás de la calle y te convertís en el puente para su felicidad y la de la familia que lo reciba!
-                                        No hace falta experiencia y te damos todos los insumos.</p>
-                                    <p>
-                                        Escribinos y te contamos todo.  Nos econtramos en el jardín botánico.
-                                    </p>
-                                </div>
+                    <div class="col-md-6 informacion">
+                        <h2>Información del <span>Equipo</span></h2>
+                        <ul>
+                            <li><b>Número del equipo:</b> 7</li>
+                            <li><b>Año y curso:</b> Primer año - 465129</li>
+                            <li><b>Materia:</b> Diseño y Desarrollo Web</li>
+                            <li><b>Docente:</b> Patricia Litovicius</li>
+                            <li><b>Sede:</b> Belgrano</li>
+                            <li><b>Aula:</b> B101</li>
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+        <section id="avances">
+            <h2>Avances</h2>
+            <div class="avances-card">
+                            <h3>Propuesta principal</h3>
+                            <p>La propuesta principal de nuestro proyecto es la de crear una página web para la ONG "Hacé feliz a un gato" con el fin de que puedan tener un espacio en el que puedan mostrar a los gatos que tienen en adopción y puedan recibir donaciones para seguir con su labor.</p>
+                            <h3>Público objetivo</h3>
+                            <p>Se dirige a todas aquellas personas que estén interesadas en brindarle un rescate, una donación o que simplemente tengan intención de ayudar a darle una mejor vida a aquellos gatos que fueron abandonados.</p>
+                            <h3>Identidad visual</h3>
+                            <p>La identidad visual de nuestro proyecto está basada en colores cálidos y en la utilización de imágenes de gatos para transmitir la idea de amor y cuidado hacia los gatos.</p>
+                            <h3>Tipo de web:</h3>
+                            <p>Landing page</p>
+                            <h3>Nombre del sitio web:</h3>
+                            <p>Hacé feliz a un gato</p>
+                            <h3>Dominio:</h3>
+                            <p>hacefelizaungato.com.ar</p>
+                            <h3>Logo:</h3>
+                            <img src="img/images.png" alt="Logo">
+                            <h3 class="paleta-title">Paleta de colores:</h3>
+                            <div class="paleta-cont">
+                                <div class="rojo paleta-square">#F24F4C</div>
+                                <div class="negro paleta-square">#242121</div>
+                                <div class="gris paleta-square">#E8E8E8</div>
+                                <div class="blanco paleta-square">#FFFFFF</div>
                             </div>
-                        </div>
-                    </div>
-                </div>
             </div>
+            <h2 class="arbol-head">Arbol del sitio</h2>
+            <img src="img/Proyecto.png" alt="Arbol" class="arbol-img">
         </section>
-        
-
-
-
-
-
-
-        <!-- FAQ -->
-        <section class="about-banner" id="about">
-            <div class="container banner-container">
-                <div class="row">
-                    <div class="col-md-6 d-flex align-items-left justify-content-start">
-                        <h2 class="banner-titulo">Preguntas frecuentes</h2>
-                    </div>
-                    <div class="col-md-6 d-flex align-items-right justify-content-end">
-                        <div class="banner-img">
-                            <img class="estrella1" src="img/icons8-estrella.svg" alt="estrella">
-                            <img class="pata" src="img/icons8-pata.svg" alt="pata">
-                            <img class="estrella2" src="img/icons8-estrella.svg" alt="estrella">
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <section id="figma">
+            <h2>Prototipado en figma del proyecto</h2>
+            <a href="https://www.figma.com/design/Tk9l9mvFiogMbmja6T7n4y/TP-Dise%C3%B1o?node-id=0-1&t=sqf28GNX9foDz9rk-1" target="_blank" class="redBtn">Ir al figma</a>
         </section>
-        <section>
-            <div class="acordion">
-                <div class="accordion accordion-flush" id="accordionFlushExample">
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                                ¿Lorem ipsum?
-                            </button>
-                        </h2>
-                        <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">Lorem ipsum Lorem ipsum Lorem ipsumLorem ipsum</div>
-                        </div>
-                    </div>
-
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                                ¿Lorem ipsum?
-                            </button>
-                        </h2>
-                        <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">Lorem ipsum Lorem ipsum Lorem ipsumLorem ipsum</div>
-                        </div>
-                    </div>
-
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                                ¿Lorem ipsum?
-                            </button>
-                        </h2>
-                        <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">Lorem ipsum Lorem ipsum Lorem ipsumLorem ipsum</div>
-                        </div>
-                    </div>
-
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                                ¿Lorem ipsum?
-                            </button>
-                        </h2>
-                        <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">Lorem ipsum Lorem ipsum Lorem ipsumLorem ipsum</div>
-                        </div>
-                    </div>
-
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                                ¿Lorem ipsum?
-                            </button>
-                        </h2>
-                        <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">Lorem ipsum Lorem ipsum Lorem ipsumLorem ipsum</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
+        <section id="video">
+            <h2>Video presentación del proyecto</h2>
+            <iframe width="100%" height="715" src="https://www.youtube.com/embed/AEVTNlvKqdI?si=b7OlZhi8Zu_sOeQ_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </section>
-
-
-
-
-
-        <!-- Servicios -->
-        <section class="about-banner" id="about">
-            <div class="container banner-container">
-                <div class="row">
-                    <div class="col-md-6 d-flex align-items-left justify-content-start">
-                        <h2 class="banner-titulo">Servicios</h2>
-                    </div>
-                    <div class="col-md-6 d-flex align-items-right justify-content-end">
-                        <div class="banner-img">
-                            <img class="estrella1" src="img/icons8-estrella.svg" alt="estrella">
-                            <img class="pata" src="img/icons8-pata.svg" alt="pata">
-                            <img class="estrella2" src="img/icons8-estrella.svg" alt="estrella">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section>
-            <div class="services-wrapper">
-                <div class="container services-container">
-                    <div class="row justify-content-center">
-                        <div class="col-md-6 col-lg-6 service-col">
-                            <div class="service">
-                                <img src="img/icons8-gato11.svg" alt="gato">
-                                <h3>Cuidamos gatos</h3>
-                                <p>Lorem ipsum dolor sit amet.</p>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-6 service-col">
-                            <div class="service">
-                                <img src="img/icons8-gato2.svg" alt="gato">
-                                <h3>Damos en adopción</h3>
-                                <p>Lorem ipsum dolor sit amet.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row justify-content-center">
-                        <div class="col-md-6 col-lg-6 service-col">
-                            <div class="service">
-                                <img src="img/icons8-gato33.svg" alt="gato">
-                                <h3>Rescatamos</h3>
-                                <p>Lorem ipsum dolor sit amet.</p>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-6 service-col">
-                            <div class="service">
-                                <img src="img/icons8-gato4.svg" alt="gato">
-                                <h3>Cuidado especial</h3>
-                                <p>Lorem ipsum dolor sit amet.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-
-<!-- Contacto -->
-        <section class="about-banner" id="about">
-            <div class="container banner-container">
-                <div class="row">
-                    <div class="col-md-6 d-flex align-items-left justify-content-start">
-                        <h2 class="banner-titulo">Contáctanos</h2>
-                    </div>
-                    <div class="col-md-6 d-flex align-items-right justify-content-end">
-                        <div class="banner-img">
-                            <img class="estrella1" src="img/icons8-estrella.svg" alt="estrella">
-                            <img class="pata" src="img/icons8-pata.svg" alt="pata">
-                            <img class="estrella2" src="img/icons8-estrella.svg" alt="estrella">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="contact-section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 social-media">
-                        <div class="social-item">
-                            <a href="https://www.facebook.com/hacefelizaungato/">
-                                <img src="img/icons8-facebook-nuevo.svg" alt="Facebook">
-                                <p>¡Hacé feliz a un gato!</p>
-                            </a>
-                        </div>
-                        <div class="social-item">
-                            <a href="https://www.instagram.com/hacefelizaungato/">
-                                <img src="img/icons8-instagram.svg" alt="Instagram">
-                                <p>@hacefelizaungato</p>
-                            </a>
-                        </div>
-                        <div class="social-item">
-                            <a href="mailto:transitos.botanico@gmail.com?Subject=Adoptar%20gatito">
-                                <img src="img/icons8-gmail-nuevo.svg" alt="Mail">
-                                <p>transitos.botanico@gmail.com</p>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <form action="#" method="post">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <input type="text" name="nombre" placeholder="Nombre" required>
-                                </div>
-                                <div class="col-md-6">
-                                    <input type="text" name="apellido" placeholder="Apellido" required>
-                                </div>
-                                <div class="col-md-6">
-                                    <input type="number" name="telefono" placeholder="Teléfono" required>
-                                </div>
-                                <div class="col-md-6">
-                                    <input type="email" name="email" placeholder="Correo electrónico" required>
-                                </div>
-                                <div class="col-md-6">
-                                    <textarea name="direccion" placeholder="Dirección (opcional)"></textarea>
-                                </div>
-                                <div class="col-md-6">
-                                    <textarea name="mensaje" placeholder="Mensaje (opcional)"></textarea>
-                                </div>
-                                <div class="col-md-12">
-                                    <button type="submit" class="">Enviar</button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
     </main>
 
     <footer>
-        <div class="footer-content">
-            <div class="footer-section text-icons">
-                <p>Hacé feliz a un gato</p>
-                <p>@hacefelizaungato</p>
-                <div class="icons">
-                    <img src="img/icons8-facebook-nuevo_redd.svg" alt="Icon 1">
-                    <img src="img/icons8-instagram_redd.svg" alt="Icon 2">
-                </div>
+        <div class="container footer-cont">
+            <div class="footer">
+                <a href="#home"><img src="img/images.png" alt="Logo"></a>
+                <div class="text">Juan Zolezzi <br> Santiago Guardo <br> Iván Rosales <br> Máximo Luciani</div>
             </div>
-            <hr>
-            <div class="footer-section image">
-                <img src="img/images.png" alt="Foto 108x108">
-            </div>
-            <hr>
-            <div class="footer-section text">
-                <p>Privacy Policy</p>
+            <div class="social-footer">
+               <img src="/img/uade.svg" alt="">
             </div>
         </div>
+        <p class="text-center">Trabajo grupal - Diseño y Desarrollo Web <br> All rights reserved.</p>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
