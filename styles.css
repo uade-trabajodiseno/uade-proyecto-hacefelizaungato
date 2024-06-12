@@ -490,6 +490,18 @@ footer {
     }
     .text{
         padding-top: 20px;
+        text-align: center;
+    }   
+
+    .social-footer{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 30px;
+    }
+
+    .social-footer img{
+        width: 50%;
+
     }
 
     .footer-cont{
